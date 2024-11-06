@@ -1,0 +1,167 @@
+@use "../abstracts" as a;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: a.$primary-color;
+  color: a.$secondary-color;
+  margin: 0;
+}
+
+header {
+  padding: 0 20px;
+  background-color: a.$lightGrayColor;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+
+  h2 {
+    color: #000;
+    margin: 10px;
+  }
+}
+
+.logo-t {
+  height: 37px;
+  width: auto;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  a {
+    color: a.$secondary-color;
+
+    &:hover {
+      color: a.$hot-pink-color;
+    }
+  }
+
+  li {
+    padding: 5px;
+    margin-left: 10px;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+      text-decoration: underline;
+      color: a.$soft-pink-color;
+    }
+  }
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: block;
+  cursor: pointer;
+
+  div {
+    width: 35px;
+    height: 3px;
+    background-color: a.$secondary-color;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+}
+
+.open {
+  .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+
+  .bar2 {
+    opacity: 0;
+  }
+
+  .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  background-color: a.$lightGrayColor;
+  opacity: 90%;
+  top: 50px;
+  left: 0;
+  height: calc(40vh - 50px);
+  width: 100%;
+
+  li {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header nav {
+    display: block;
+  }
+
+  #hamburger-icon {
+    display: none;
+  }
+}

@@ -1,0 +1,24 @@
+//import variables file and save it in "v" namespace
+@use "../abstracts/variables" as v;
+
+body {
+  font-family: v.$body-font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: v.$heading-font-family;
+  color: v.$secondary-color;
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: v.$body-font-family;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: v.$secondary-color;
+}
