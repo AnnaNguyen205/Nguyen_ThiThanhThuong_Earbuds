@@ -14,25 +14,25 @@ function toggleMobileMenu(menu) {
   // Features
   const features = [
     {
-      image: "./images/feature-1.png",
+      image: "./images/feature-1.svg",
       name: "Noise Cancellation",
       description:
         "Advanced noise-canceling technology filters out background noise, allowing for immersive listening in any environment.",
     },
     {
-      image: "./images/feature-2.png",
+      image: "./images/feature-2.svg",
       name: "Magnetic Logo",
       description:
         "Unique magnetic logo design for easy attachment and storage, adding a touch of style and functionality to your earbuds.",
     },
     {
-      image: "./images/feature-3.png",
+      image: "./images/feature-3.svg",
       name: "Volume Control",
       description:
         "Easily adjust the volume with touch-sensitive controls, giving you seamless control over your audio experience.",
     },
     {
-      image: "./images/feature-4.png",
+      image: "./images/feature-4.svg",
       name: "Bluetooth Connectivity",
       description:
         "Reliable Bluetooth connection with extended range, ensuring uninterrupted audio streaming and fast device pairing.",
