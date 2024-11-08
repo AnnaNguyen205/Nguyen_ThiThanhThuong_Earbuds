@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <link href="css/grid.css" rel="stylesheet" type="text/css" />
     <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
 
     <title>T Label Earbuds</title>
   </head>
@@ -53,7 +54,77 @@
       </div>
     </header>
 
+    <model-viewer
+      src="../model/one-earbud.gltf"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      tone-mapping="neutral"
+      poster="../images/poster.webp"
+      shadow-intensity="1"
+      environment-image="../images/evening_road_01_puresky_8k.hdr"
+      skybox-image="../images/evening_road_01_puresky_8k.hdr"
+    >
+      <!-- Noise Cancellation -->
+      <button
+        class="Hotspot"
+        slot="hotspot-1"
+        data-position="-0.7612877208623221m 0.6725456977343411m 0.6615491620708749m"
+        data-normal="-0.7713260022652907m 0.18478469099248945m 0.609024479150268m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation"></div>
+      </button>
+      <!-- Magnetic Logo -->
+      <button
+        class="Hotspot"
+        slot="hotspot-2"
+        data-position="0.010391727526243288m 0.6785191173904458m 0.45516180580264026m"
+        data-normal="0.9999999999999996m 3.422854295029559e-8m -4.191787791455221e-24m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation"></div>
+      </button>
+      <!-- Volume Control -->
+      <button
+        class="Hotspot"
+        slot="hotspot-3"
+        data-position="-0.17779960525560398m 0.5078717454083296m 1.0200735260061276m"
+        data-normal="-1.0911992700006472e-8m -0.6860724660358206m 0.7275332097901289m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation"></div>
+      </button>
+      <!-- Bluetooth Connectivity -->
+      <button
+        class="Hotspot"
+        slot="hotspot-4"
+        data-position="-0.11967970571532413m 0.19377979861179295m 0.49424430284464693m"
+        data-normal="0.9984192388182968m 0.0561174471840759m -0.0031393755805139275m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation"></div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">View in your space</button>
+      <div id="ar-prompt">
+        <img src="images/ar_hand_prompt.png" />
+      </div>
+    </model-viewer>
+
+    <main>
+      <h1 class="hidden">Main Content</h1>
+
+      <h2 class="hidden">Features Section</h2>
+    </main>
+
     <!-- Link to JS file in the end of body tag -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
     <script src="js/main.js"></script>
   </body>
