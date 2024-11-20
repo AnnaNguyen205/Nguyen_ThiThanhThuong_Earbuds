@@ -666,6 +666,37 @@ model-viewer > #ar-prompt > img {
     margin: 20% 0 5% 0;
   }
 }
+footer {
+  background-color: #641e16;
+  color: #fdedec;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+footer p {
+  color: #fdedec;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 25px 0;
+    margin-top: 40px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 30px 0;
+    margin-top: 50px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+}
 body {
   background-color: #fdedec;
 }/*# sourceMappingURL=main.css.map */
