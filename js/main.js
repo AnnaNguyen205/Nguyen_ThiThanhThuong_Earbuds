@@ -143,4 +143,18 @@ function toggleMobileMenu(menu) {
     console.log(images[buds.frame]);
     context.drawImage(images[buds.frame], 0, 0);
   }
+
+  // COLORS
+  const earbuds = document.querySelector("#ear-buds");
+  const button = document.querySelectorAll("#color-con button");
+
+  function swapColor(e) {
+    console.log(e.currentTarget.id);
+    const selected = e.currentTarget.id;
+    earbuds.src = `images/color-${selected}.png`;
+  }
+
+  button.forEach((button) => {
+    button.addEventListener("click", swapColor);
+  });
 })();

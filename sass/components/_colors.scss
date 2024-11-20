@@ -1,0 +1,76 @@
+#color-con {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  button {
+    border: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 5px;
+  }
+}
+
+#pink {
+  background-color: #e0115f;
+}
+
+#green {
+  background-color: rgb(131, 233, 131);
+}
+
+#orange {
+  background-color: orange;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#colors-text {
+  text-align: center;
+  line-height: 16px;
+  margin: 10% 0;
+
+  h2 {
+    line-height: 32px;
+  }
+}
+
+#ear-buds {
+  margin: 20% 0;
+}
+
+@media screen and (min-width: 768px) {
+  #color-con {
+    margin-bottom: 40px;
+
+    button {
+      width: 45px;
+      height: 45px;
+      border-radius: 17px;
+    }
+  }
+
+  #colors-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  #ear-buds {
+    margin: 20% 0 5% 0;
+  }
+}
