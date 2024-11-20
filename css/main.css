@@ -454,6 +454,67 @@ model-viewer > #ar-prompt > img {
     background: rgba(255, 255, 255, 0.5);
   }
 }
+.feature {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  left: calc(100% + 1em);
+  max-width: 200px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  top: 50%;
+}
+.feature p {
+  color: #333;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: start;
+  font-size: 12px;
+  text-transform: inherit;
+}
+.feature h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: start;
+}
+.feature img {
+  margin: 5px 0;
+  width: 40%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature {
+    max-width: 300px;
+  }
+  .feature img {
+    max-width: 35%;
+  }
+  .feature h3 {
+    font-size: 22px;
+  }
+  .feature p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature {
+    max-width: 400px;
+  }
+  .feature img {
+    max-width: 30%;
+  }
+  .feature h3 {
+    font-size: 26px;
+  }
+  .feature p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 body {
   background-color: #fdedec;
 }/*# sourceMappingURL=main.css.map */
