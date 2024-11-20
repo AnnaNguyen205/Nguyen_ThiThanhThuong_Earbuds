@@ -1,0 +1,87 @@
+@use "../abstracts" as a;
+@use "../abstracts/variables" as v;
+
+#contact {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        label {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+        }
+
+        input:focus,
+        textarea:focus {
+          border-color: v.$hot-pink-color; // Accent color for focus
+          outline: none;
+        }
+      }
+
+      .submit-button {
+        padding: 10px 20px;
+        background-color: #f76495; // Button color
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: v.$hot-pink-color; // Darker shade on hover
+        }
+      }
+    }
+  }
+}
+
+#contact-image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #contact-image {
+    display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+
+    img {
+      min-width: 100%;
+      padding: 30px;
+    }
+  }
+}
