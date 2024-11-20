@@ -89,8 +89,9 @@
       />
       <section class="col-span-full m-col-start-1 m-col-end-7" id="buds-con">
         <h2 class="hidden">Four Colors</h2>
-        <img src="images/color-pink.png" id="ear-buds" />
+        <img src="images/color-pink.png" alt="Colorful earbuds" id="ear-buds" />
         <section id="color-con">
+          <h3 class="hidden">Color Button</h3>
           <button id="pink"></button>
           <button id="green"></button>
           <button id="orange"></button>
@@ -184,7 +185,7 @@
 
     <!-- Earbud Features -->
     <section id="feature-section">
-      <h1 class="hidden">Earbud Features</h1>
+      <h2 class="hidden">Earbud Features</h2>
       <div id="feature-con" class="grid-con">
         <h2 class="hidden">Feature Container</h2>
         <div class="feature col-span-2 m-col-span-3">
@@ -225,7 +226,56 @@
       </div>
     </section>
 
+    <!-- Contact -->
+    <section id="contact" class="grid-con">
+      <h2 class="hidden">Contact</h2>
+      <div class="contact-container col-span-full m-col-start-1 m-col-end-7">
+        <h2>Contact Us</h2>
+        <p>
+          Have questions or need help? Reach out to us anytime, and we'll be
+          happy to assist you.
+        </p>
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </div>
+      <div id="contact-image" class="m-col-start-7 m-col-end-13">
+        <img src="images/contact-image.jpg" alt="contact image" />
+      </div>
+    </section>
+
     <footer>
+      <h1 class="hidden">Footer</h1>
       <p>&copy; 2024 HeartBuds. All rights reserved.</p>
     </footer>
 
