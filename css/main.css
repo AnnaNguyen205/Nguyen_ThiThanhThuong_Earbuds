@@ -461,7 +461,6 @@ model-viewer > #ar-prompt > img {
   color: rgba(0, 0, 0, 0.8);
   display: block;
   left: calc(100% + 1em);
-  max-width: 200px;
   overflow-wrap: break-word;
   padding: 0.5em 1em;
   margin: 1em 0;
