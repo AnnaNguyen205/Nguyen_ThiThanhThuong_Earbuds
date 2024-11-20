@@ -515,6 +515,11 @@ model-viewer > #ar-prompt > img {
     line-height: 30px;
   }
 }
+#explode-view {
+  max-width: 100%;
+  /* width: 100vw; */
+}
+
 body {
   background-color: #fdedec;
 }/*# sourceMappingURL=main.css.map */
