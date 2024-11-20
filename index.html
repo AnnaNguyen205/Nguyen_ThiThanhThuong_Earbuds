@@ -54,6 +54,25 @@
       </div>
     </header>
 
+    <main class="grid-con">
+      <!-- Main Content -->
+      <h1 class="hidden">Main Content</h1>
+      <!-- X-ray Slider -->
+      <div class="col-span-full">
+        <h2 class="hidden">X-ray Slider</h2>
+        <div id="mobile-tablet-view">
+          <img src="images/earbuds-XRay.png" alt="x-ray view of earbuds" />
+          <img src="images/earbuds.png" alt="regular view of earbuds" />
+        </div>
+        <div id="comparison-con">
+          <div id="xray">
+            <div id="divisor"></div>
+          </div>
+          <input type="range" min="0" max="100" value="50" id="slider" />
+        </div>
+      </div>
+    </main>
+
     <model-viewer
       src="../model/one-earbud.gltf"
       ar
