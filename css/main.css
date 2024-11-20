@@ -520,6 +520,23 @@ model-viewer > #ar-prompt > img {
   /* width: 100vw; */
 }
 
+#welcome-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  #welcome-text {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #welcome-text {
+    margin-top: 40px;
+    font-size: 36px;
+  }
+}
 #home-hero {
   height: 500px;
   background-image: url(../images/earbud-hero-image.jpg);
