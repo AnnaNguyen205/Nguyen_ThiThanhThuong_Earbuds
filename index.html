@@ -71,6 +71,27 @@
       <!-- Main Content -->
       <h1 class="hidden">Main Content</h1>
 
+      <!-- Video -->
+      <section
+        id="player-container"
+        class="col-span-full m-col-start-2 m-col-end-12 l-col-start-3 l-col-end-11"
+      >
+        <h2 class="hidden">Video</h2>
+        <video
+          class="player"
+          controls
+          preload="metadata"
+          poster="images/thumbnail.png"
+        >
+          <source src="videos/earbud-video.mp4" type="video/mp4" />
+          <source src="videos/earbud-video.webm" type="video/webm" />
+          <p>
+            Ooops, something went wrong. You may be using an oudated browser or
+            have javascript disabled.
+          </p>
+        </video>
+      </section>
+
       <!-- Scrolling Earbuds -->
       <div class="col-span-full">
         <h2 id="welcome-text">

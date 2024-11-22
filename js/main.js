@@ -157,4 +157,7 @@ function toggleMobileMenu(menu) {
   button.forEach((button) => {
     button.addEventListener("click", swapColor);
   });
+
+  // Video Player
+  const player = new Plyr("video");
 })();

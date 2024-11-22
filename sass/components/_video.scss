@@ -1,0 +1,25 @@
+@use "../abstracts" as a;
+
+:root {
+  --plyr-color-main: #ff4081;
+  --plyr-control-icon-size: 15px;
+  --plyr-control-radius: 20px;
+  --plyr-control-family: "Open Sans", sans-serif;
+  --plyr-control-spacing: 15px;
+}
+
+#player-container {
+  margin: 50px;
+}
+
+.plyr__progress__buffer {
+  display: none;
+}
+
+.plyr__volume input[type="range"] {
+  top: 25%;
+}
+
+.plyr__progress input[type="range"] {
+  top: 20%;
+}
